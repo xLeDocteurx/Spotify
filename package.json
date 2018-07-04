@@ -1,0 +1,26 @@
+{
+  "name": "spotify",
+  "version": "1.0.0",
+  "description": "32th exercice from simplon's st gaudens 2nd prom",
+  "main": "server.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xLeDocteurx/Spotify.git"
+  },
+  "keywords": [
+    "remake"
+  ],
+  "author": "LeDocteur",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xLeDocteurx/Spotify/issues"
+  },
+  "homepage": "https://github.com/xLeDocteurx/Spotify#readme",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.3"
+  }
+}
