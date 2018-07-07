@@ -2,8 +2,6 @@
     <%- include('parts/header') %>
 
 
-
-
         <div role="listbox">
             <div id="my_carousel" class="carousel slide" data-ride="carousel">
                 <!--<img src="https://placehold.it/1400x500">-->
@@ -17,7 +15,7 @@
                     </div>
                 </ol>
                 <!-- Slides -->
-                <div class="carousel-inner">
+                <div class="carousel-inner text-center">
                     <!-- Page 1 -->
                     <div class="item active">
                         <div class="carousel-page">
@@ -25,12 +23,18 @@
                         <div class="carousel-caption">
                         </div>
                         <div id="profit">
-                            <span>Profitez de 60 jours de Spotify Premium gratuits</span>
+                            Profitez de 60 jours de Spotify Premium gratuits
                         </div>
+
+
+
                     </div>
-                    <div id="profitez">
-                        <span>PROFITEZ DE 60 JOURS GRATUITS</span>
-                    </div>
+                    <button id="telecharger" class="btn">
+                        TELECHARGER SPOTIFY FREE
+                    </button>
+                    <button id="abonnez" class="btn">
+                        ABONNEZ VOUS A SPOTIFY PRENIUM
+                    </button>
                     <!-- Page 2 -->
                     <div class="item">
                         <div class="carousel-page">
@@ -59,6 +63,61 @@
                 </a>
             </div>
         </div>
+        <!-- </div> -->
+
+        <!--<div>
+        <h1>
+          <span>
+            Offrez Spotify Premium à toute la famille.<br>Seulement 14,99&nbsp;€.
+          </span>
+        </h1>
+        <a href="/fr/family/">
+          EN SAVOIR PLUS
+        </a>
+      </div>
+
+      <div>
+        <h1>
+          <span>
+            Utilisez Spotify sur votre PlayStation®.
+          </span>
+        </h1>-->
+        <!--<a href="/fr/playstation/">
+          EN SAVOIR PLUS
+        </a>
+      </div>
+
+    </div>
+
+    <!-- Controls -->
+        <!--<ahref="#carousel-tour">
+    <span></span>
+    <span>
+      Précédent
+    </span>
+  </a>
+  <a href="#carousel-tour">
+    <span></span>
+    <span>
+      Continuer
+    </span>
+  </a>
+</div>
+</div>
+</div>
+
+<div>
+  <a name="whats-on-spotify" href="#whats-on-spotify"   data-ga-category="home"   data-ga-action="arrows"   data-ga-label="learn-more" >
+    <div>
+      <svg><use xlink:href="#scroll-down"></svg>
+      <svg><use xlink:href="#scroll-down"></svg>
+    </div>
+    <span>EN SAVOIR PLUS SUR SPOTIFY</span>
+  </a>
+</div>-->
+
+
+
 
         <div class="container">
             <div class="col-md-8">
@@ -105,6 +164,12 @@
             <div id="album-slot3" data-tracking='{"category": "home", "action": "albums", "label": "slot3"}'></div>
             <div id="album-slot4" data-tracking='{"category": "home", "action": "albums", "label": "slot4"}'></div>
         </div>
+
+
+
+
+
+
 
         <div>
             <a name="a-few-features" href="#a-few-features" data-ga-category="home" data-ga-action="arrows" data-ga-label="features">
@@ -183,6 +248,7 @@
             <div class="console">
                 <div class="row text-center">
                     <img src="//d2c87l0yth4zbw.global.ssl.fastly.net/i/home/all-devices.svg">
+                    <img class="center-block img-devices" src="//web.archive.org/web/20170225103228im_/https://d2c87l0yth4zbw.global.ssl.fastly.net/i/home/all-devices.svg">
 
                     <h2>
                         <div id="compte">
@@ -231,82 +297,63 @@
         <div>
             <div data-original="//d2c87l0yth4zbw-2.global.ssl.fastly.net/i/home/bg-albums.png"></div>
             <div>
-                <div>
-                    <div>
-                        <div>
-                                    <h1>
-                                            En avant la musique.
-                                    </h1>
-                                    <p>
-                                        De la musique gratuite.
-                                        <br> Ou optez pour un compte Premium et écoutez vos morceaux à la demande, partout où
-                                        vous voulez.
-                                    </p>
-                        </div>
-                        <div>
-                            <div>
-                                <div>
-                                    <h3>Spotify</h3>
-                                    <h3>
-                                        0,00&nbsp;€
-                                        <span> / mois</span>
-                                    </h3>
-                                    <div></div>
-                                    <ul>
-                                        <li>
-                                            Écoutez vos artistes et albums préférés. Vous entendrez occasionnellement des spots publicitaires.
-                                        </li>
-                                    </ul>
-                                    <a href="/fr/download/" data-tracking='{"category": "home (subscriptions)", "action": "free"}'>
-                                        TÉLÉCHARGER SPOTIFY FREE
-                                    </a>
-                                </div>
+                <div class="row">
+                    <div class="col">
+                        <h1>
+                            En avant la musique.
+                        </h1>
+                        <p>
+                            De la musique gratuite.
+                            <br> Ou optez pour un compte Premium et écoutez vos morceaux à la demande, partout où vous voulez.
+                        </p>
+                        <h3>Spotify</h3>
+                        <h3>
+                            0,00&nbsp;€
+                            <span> / mois</span>
+                        </h3>
+                        <div></div>
+                        <ul>
+                            <li>
+                                Écoutez vos artistes et albums préférés. Vous entendrez occasionnellement des spots publicitaires.
+                            </li>
+                        </ul>
+                        <a href="/fr/download/" data-tracking='{"category": "home (subscriptions)", "action": "free"}'>
+                            TÉLÉCHARGER SPOTIFY FREE
+                        </a>
 
-                                <div></div>
 
-                                <div>
-                                    <h3>
-                                        Spotify Premium
-                                    </h3>
-                                    <h3>
-                                        9,99&nbsp;€
-                                        <span> / mois</span>
-                                    </h3>
-                                    <div></div>
-                                    <div>
-                                        <p>
-                                            <a href="/fr/family/" data-ga-category="home (subscriptions)" data-ga-action="family">Offre Family</a> disponible</p>
+                        <h3>
+                            Spotify Premium
+                        </h3>
+                        <h3>
+                            9,99&nbsp;€
+                            <span> / mois</span>
+                        </h3>
+                        <p>
+                            <a href="/fr/family/" data-ga-category="home (subscriptions)" data-ga-action="family">Offre Family</a> disponible</p>
 
-                                        <p>Essayez Spotify gratuitement pendant 30 jours*</p>
-                                    </div>
-                                    <div></div>
+                        <p>Essayez Spotify gratuitement pendant 30 jours*</p>
 
-                                    <ul>
-                                        <li>
-                                            Écoute à la demande.
-                                        </li>
-                                        <li>
-                                            Musique hors connexion
-                                        </li>
-                                        <li>
-                                            Aucune pub
-                                        </li>
-                                        <li>
-                                            Grande qualité audio.
-                                        </li>
-                                    </ul>
-                                    <a href="/fr/premium/?checkout=false" data-tracking='{"category": "home (subscriptions)", "action": "premium"}'>
-                                        ABONNEZ-VOUS À SPOTIFY PREMIUM
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+                        <ul>
+                            <li>
+                                Écoute à la demande.
+                            </li>
+                            <li>
+                                Musique hors connexion
+                            </li>
+                            <li>
+                                Aucune pub
+                            </li>
+                            <li>
+                                Grande qualité audio.
+                            </li>
+                        </ul>
+                        <a href="/fr/premium/?checkout=false" data-tracking='{"category": "home (subscriptions)", "action": "premium"}'>
+                            ABONNEZ-VOUS À SPOTIFY PREMIUM
+                        </a>
                     </div>
-                    <div>
-                        <div>
-                            <div>
-                            </div>
-                        </div>
+                    <div class="col-md-6">
+                        <img src="iphone.png">
                     </div>
                 </div>
                 <p>

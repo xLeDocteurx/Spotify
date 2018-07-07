@@ -1,0 +1,65 @@
+<%- include('parts/head') %>
+    <%- include('parts/header') %>
+
+        <div class="spacer"></div>
+
+
+        <!-- <form action="/connect" method="post">
+            <input name="co_username" type="text">
+            <input name="co_password" type="password">
+            <button type="submit">Connection</button>
+        </form> -->
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col">
+                    <form class="form-signin" action="/connect" method="post">
+                        <div class="text-center mb-4">
+                            <img class="rounded my-4" src="logo.png" alt="" width="72" height="72">
+
+                            <h1 class="h3 mb-3 font-weight-normal">Floating labels</h1>
+                            <p>Build form controls with floating labels via the
+                                <code>:placeholder-shown</code> pseudo-element.
+                                <a href="https://caniuse.com/#feat=css-placeholder-shown">Works in latest Chrome, Safari, and Firefox.</a>
+                            </p>
+                        </div>
+
+
+                        <button class="btn btn-sm btn-primary rounded">Connexion avec Facebook</button>
+
+                        <hr style="width: 40%;">OU
+                        <hr style="width: 40%;">
+
+                        <div class="form-label-group">
+                            <input id="co_username" name="co_username" class="form-control" placeholder="Nom d'utilisateur" required="" autofocus=""
+                                type="text">
+                        </div>
+
+                        <div class="form-label-group">
+                            <input id="co_password" name="co_password" class="form-control" placeholder="Mot de passe" required="" type="password">
+                        </div>
+
+                        <div class="checkbox mb-3">
+                            <label>
+                                <input value="remember-me" type="checkbox"> Se souvenir de moi
+                            </label>
+
+                            <button class="btn btn-sm btn-success" type="submit">Se connecter</button>
+
+                        </div>
+
+                        Nom d'utilisateur ou mot de passe oublié ?
+                        <br> Vous n'avez pas de compte ? S'inscrire
+
+                        <hr>
+
+                        <p>Si vous cliquez sur « Connexion avec Facebook » et que n'êtes pas encore utilisateur de Spotify,
+                            vous serez inscrit, ce qui signifie que vous acceptez les Conditions d'utilisation et la Politique
+                            de confidentialité de Spotify.</p>
+                    </form>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+        </div>
+
+        <%- include('parts/footer') %>
