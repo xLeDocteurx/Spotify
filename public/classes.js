@@ -3,6 +3,7 @@ class AUTH {
     if (evenement == "co") {
       console.log("l'utilisateur veut se connecter");
       localStorage.setItem("user", JSON.stringify(fonction));
+      window.location.replace("/");
     } else if (evenement == "disco") {
       console.log("l'utilisateur veut se déconnecter");
       localStorage.removeItem("user");
