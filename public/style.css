@@ -15,7 +15,7 @@ header {
 }
 
 .spacer {
-	margin-top: 60px;
+	margin-top: 56px;
 }
 
 .divider {
@@ -99,6 +99,8 @@ header {
 #savoir{
 	color: #ADD8E6;
 	text-decoration: underline;
+	font-weight: bold;
+	font-size: 20px;
 }
 
 h1{
