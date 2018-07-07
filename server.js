@@ -13,6 +13,8 @@ let server = app.listen(process.env.PORT || 8080);
 
 let users = require('./users.json').Users;
 
+console.log("server is running");
+
 app.get('/', (req, res) => {
 
     res.render('index');
