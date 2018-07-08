@@ -1,0 +1,1 @@
+AUTH.do("check_auth",()=>{let e=JSON.parse(localStorage.getItem("user")).color;document.getElementById("nav-brand").style.backgroundColor=e;let t=document.getElementsByClassName("gradient");for(let a=0;a<t.length;a++)t[a].style.backgroundImage=`-webkit-linear-gradient(50deg, #ff4169 0, ${e} 100%)`});

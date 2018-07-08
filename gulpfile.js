@@ -1,7 +1,8 @@
 const gulp = require("gulp");
 const cleanCSS = require("gulp-clean-css");
 const minify = require("gulp-minify");
-const uglify = require("gulp-uglify");
+let uglify = require("gulp-uglify-es").default;
+// const uglify = require("gulp-uglify");
 const pump = require("pump");
 
 const nodemon = require("gulp-nodemon");
@@ -10,11 +11,14 @@ const exec = require("child_process").exec;
 // let server = require("./server");
 
 gulp.task("start", () => {
+
+  exec("npm i");
+
   clean_css();
   // minify_it();
-  // uglify_it();
+  uglify_it();
 
-  exec("node server.js");
+  exec("node server.js &");
 
   // nodemon({
   //   script: "server.js"
@@ -44,6 +48,12 @@ function minify_it() {
 
 gulp.task("uglify", uglify_it);
 
-function uglify_it(cb) {
-  pump([gulp.src("public/*.js"), uglify(), gulp.dest("public/dist")], cb);
+function uglify_it(/*cb*/) {
+  // pump([gulp.src("public/scripts.js"), uglify(), gulp.dest("public/dist")], cb);
+
+  return gulp
+    .src("public/*.js")
+    // .pipe(rename("scripts.min.js"))
+    .pipe(uglify(/* options */))
+    .pipe(gulp.dest("public/dist"));
 }
