@@ -2,9 +2,9 @@
   "name": "spotify",
   "version": "1.0.0",
   "description": "32th exercice from simplon's st gaudens 2nd prom",
-  "main": "server.js",
+  "main": "gulpfile.js",
   "scripts": {
-    "test": "test"
+    "test": "echo \"No unitary test configured for this build\""
   },
   "repository": {
     "type": "git",
@@ -21,8 +21,10 @@
   "homepage": "https://github.com/xLeDocteurx/Spotify#readme",
   "dependencies": {
     "bootstrap": "^4.1.1",
+    "browser-sync": "^2.24.5",
     "ejs": "^2.6.1",
     "express": "^4.16.3",
+    "gulp-for-compass": "0.0.2",
     "gulp-nodemon": "^2.2.1",
     "mini.css": "^3.0.0",
     "minify": "^3.0.5",

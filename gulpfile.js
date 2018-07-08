@@ -1,4 +1,7 @@
 const gulp = require("gulp");
+const compass = require("gulp-for-compass");
+const browserSync = require("browser-sync");
+const reload = browserSync.reload;
 const cleanCSS = require("gulp-clean-css");
 const minify = require("gulp-minify");
 let uglify = require("gulp-uglify-es").default;
@@ -11,8 +14,10 @@ const exec = require("child_process").exec;
 // let server = require("./server");
 
 gulp.task("start", () => {
+  // exec("npm i");
 
-  exec("npm i");
+  compass_this_shhh();
+  bsync_this();
 
   clean_css();
   // minify_it();
@@ -51,9 +56,43 @@ gulp.task("uglify", uglify_it);
 function uglify_it(/*cb*/) {
   // pump([gulp.src("public/scripts.js"), uglify(), gulp.dest("public/dist")], cb);
 
-  return gulp
-    .src("public/*.js")
-    // .pipe(rename("scripts.min.js"))
-    .pipe(uglify(/* options */))
-    .pipe(gulp.dest("public/dist"));
+  return (
+    gulp
+      .src("public/*.js")
+      // .pipe(rename("scripts.min.js"))
+      .pipe(uglify(/* options */))
+      .pipe(gulp.dest("public/dist"))
+  );
+}
+
+gulp.task("compass_it", compass_this_shhh);
+
+function compass_this_shhh() {
+  gulp
+    .src("sass/*.scss")
+    .pipe(
+      compass({
+        sassDir: "sass/",
+        cssDir: "stylesheets/"
+      })
+    )
+    .pipe(gulp.dest("stylesheets/"));
+}
+
+gulp.task("serve", function() {
+
+});
+
+function bsync_this () {
+  browserSync({
+    server: {
+      baseDir: "./"
+    }
+  });
+
+  // gulp.watch(
+  //   ["styles/**/*.css", "scripts/**/*.js"],
+  //   { cwd: "./" },
+  //   reload
+  // );
 }
