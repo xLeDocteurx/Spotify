@@ -32,10 +32,12 @@
     "pump": "^3.0.0"
   },
   "devDependencies": {
+    "compass": "^0.1.1",
     "gulp": "^4.0.0",
     "gulp-clean-css": "^3.9.4",
     "gulp-minify": "^3.1.0",
     "gulp-uglify": "^3.0.0",
-    "gulp-uglify-es": "^1.0.4"
+    "gulp-uglify-es": "^1.0.4",
+    "nodemon": "^1.17.5"
   }
 }
