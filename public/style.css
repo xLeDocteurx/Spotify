@@ -222,6 +222,11 @@ header {
   /* vertical-align: middle; */
 }
 
+.plays-a {
+  opacity: 0%;
+  width: 100%;
+}
+
 .plays-b {
   opacity: 0%;
   width: 100%;
